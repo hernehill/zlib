@@ -51,7 +51,7 @@ if(NOT ZLIB_CONF_WRITTEN)
     file(WRITE ${CONF_OUT_FILE} ${ZCONF_CONTENT})
     file(APPEND ${CONF_OUT_FILE} "#cmakedefine Z_PREFIX 1\n")
     file(APPEND ${CONF_OUT_FILE} "#cmakedefine HAVE_STDARG_H 1\n")
-    file(APPEND ${CONF_OUT_FILE} "#cmakedefine HAVE_UNISTD_H 1\n")
+    file(APPEND ${CONF_OUT_FILE} "#cmakedefine HAVE_UNISTD_H 0\n")
     file(READ ${zlib_SOURCE_DIR}/zconf.h ZCONF_CONTENT OFFSET 244)
     set(FIRST_ITEM TRUE)
 
