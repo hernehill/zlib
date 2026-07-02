@@ -26,6 +26,7 @@ def commands():
     env.REZ_ZLIB_ROOT = '{root}'
     env.ZLIB_ROOT = '{root}'
     env.PKG_CONFIG_PATH.append("{root}/lib/cmake/zlib")
+    env.PATH.append("{root}/bin")
 
 
 build_system = "cmake"
